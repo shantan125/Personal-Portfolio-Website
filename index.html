@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Web Site</title>
+    <link rel="stylesheet" href="custom.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="images/web developer.png" width="50" height="50" class="d-inline-block align-top"
+                alt="Shantan portfolio" />
+            <div class="brandname d-inline-block align-top">
+                <span>SHANTAN'S PORTFOLIO</span>
+            </div>
+        </a>
+        <div class="items">
+            <div class="home"><a href="index.html">Home</a></div>
+            <div class="about"><a href="#about">About</a></div>
+            <div class="contact">
+                <a href="mailto:shantanyeddula125@gmail.com">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="herosection">
+        <div class="container-fluid hero-section text-center">
+            <div class="row">
+                <!-- Left Image Column -->
+                <div class="col-md-4">
+                    <img src="images/left.png" alt="Left Image" height="200" width="200" class="img-fluid" />
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-4 align-self-center herotext">
+                    <h1 id="typed-text"></h1>
+                    <p id="typed-subtext"></p>
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="col-md-4">
+                    <img src="images/right.png" alt="Right Image" height="200" width="200" class="img-fluid " />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            typeText('Hello There!...', 'typed-text', function () {
+                typeText('My Name Is Yeddula Shantan', 'typed-text', function () {
+                typeSubText('I am a Computer Science student', 'typed-subtext', function () {
+                    typeSubText('I am a Programmer', 'typed-subtext', function () {
+                        typeSubText('I am a Frontend Developer', 'typed-subtext');
+                    });
+                });
+            });
+        });
+
+        function typeText(text, elementId, callback) {
+            let i = 0;
+            const speed = 100;
+
+            function type() {
+                if (i < text.length) {
+                    document.getElementById(elementId).innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    if (callback) {
+                        callback();
+                    }
+                }
+            }
+
+            setTimeout(type, 1000);
+        }
+
+        function typeSubText(subText, elementId, callback) {
+            document.getElementById(elementId).innerHTML = ''; // Clear existing text
+            let i = 0;
+            const speed = 100;
+
+            function type() {
+                if (i < subText.length) {
+                    document.getElementById(elementId).innerHTML += subText.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    if (callback) {
+                        callback();
+                    }
+                }
+            }
+
+            setTimeout(type, 500); // Delay before starting typing
+        }
+    </script>
+</body>
+
+</html>

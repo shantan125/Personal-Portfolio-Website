@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+@font-face {
+  font-family: 'Lilita_One';
+  src: url(font/Lilita_One/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto_flex';
+  src: url(font/Roboto_Flex/RobotoFlex-VariableFont_GRAD\XTRA\YOPQ\YTAS\YTDE\YTFI\YTLC\YTUC\opsz\slnt\wdth\wght.ttf);
+}
+
+nav.navbar {
+  background-color: #f0edcf;
+}
+
+.navbar-brand {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.brandname {
+  margin-top: 12px;
+}
+
+.navbar .items {
+  display: flex;
+}
+
+.navbar .items a {
+  margin: 10px;
+  padding: 20px;
+}
+
+.navbar .items .home a,
+.navbar .items .about a,
+.navbar .items .contact a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.navbar .items .home a:hover,
+.navbar .items .about a:hover,
+.navbar .items .contact a:hover {
+  background-color: #40a2d8;
+  color: white;
+}
+
+.herosection {
+  background-color: #0b60b0;
+}
+
+.herotext h1 {
+  font-family: 'Lilita_One', sans-serif;
+  color: #f0edcf;
+}
+
+.herotext p {
+  font-family: 'Roboto_flex', sans-serif;
+  font-size: medium;
+  color: #f0edcf;
+}
+
+.container.objcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.abouttext {
+  flex: 1;
+  max-width: 70%;
+  padding: 20px;
+}
+
+.aboutimage {
+  flex: 1;
+  max-width: 30%;
+  margin-left: 20px;
+}
+
+.eduinst {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  margin: 20px;
+  background-color: #0b60b0;
+  color: #f0edcf;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  font-family: 'Roboto_flex', sans-serif;
+  transition: 0.4s;
+}
+
+.eduinst:hover {
+  background-color: #00aeff;
+  color: black;
+  transform: scale(1.1);
+}
+
+.eduinst h5,
+.eduinst p,
+.eduinst small {
+  margin: 5px 0;
+}
+
+.eduinst.dip {
+  height: 200px;
+  padding-left: 5px;
+}
+
+.eduinst.eng,
+.scl {
+  padding-left: 5px;
+}
+
+.education h1 {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.skills img {
+  padding: 10px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.skill {
+  margin: 20px;
+}
+
+.skillsheading,
+.personaltraitsheading,
+.technicalskillsheading {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.shining-img {
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.shining-img:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+}
+
+.skills {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #0b60b0;
+  color: black;
+  margin: 40px;
+  transition: 0.2s;
+}
+
+.skills:hover {
+  color: #f0edcf;
+}
+
+.certification {
+  color: #f0edcf;
+  background-color: #0b60b0;
+  border: 1px #0b60b0 solid;
+  box-shadow: 0 0 10px rgba(0, 89, 255, 0.3);
+  margin-right: 90px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 1rem;
+  font-family: 'Roboto_flex', sans-serif;
+  transition: 0.3s;
+}
+
+.certification:hover {
+  background-color: #40a2d8;
+  transform: scale(1.1);
+  transform: rotate(06deg);
+  color: black;
+}
+
+.certihead {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.projectsection {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: #0b60b0;
+  color: #f0edcf;
+  font-family: 'Roboto_flex', sans-serif;
+  border-radius: 1rem;
+  margin: 50px;
+  padding: 30px;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: #40a2d8;
+}
+
+.play-btn {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 1rem;
+  background-color: #40a2d8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.play-btn:hover {
+  background-color: black;
+  color: #f0edcf;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+small {
+  color: rgb(250, 245, 245);
+}
+
+.projecthead {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.certhead {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.proj {
+  font-family: 'Lilita_One', sans-serif;
+}
+
+.footer {
+  background-color: #0b60b0;
+  color: #f0edcf;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.social-icons img {
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons a img:hover {
+  opacity: 0.8;
+}
+
+.txt {
+  color: #f0edcf;
+}
