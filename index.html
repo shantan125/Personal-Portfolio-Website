@@ -2,111 +2,287 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Web Site</title>
-    <link rel="stylesheet" href="custom.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Web Site</title>
+  <link rel="stylesheet" href="custom.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="images/web developer.png" width="50" height="50" class="d-inline-block align-top"
-                alt="Shantan portfolio" />
-            <div class="brandname d-inline-block align-top">
-                <span>SHANTAN'S PORTFOLIO</span>
-            </div>
-        </a>
-        <div class="items">
-            <div class="home"><a href="index.html">Home</a></div>
-            <div class="about"><a href="#about">About</a></div>
-            <div class="contact">
-                <a href="mailto:shantanyeddula125@gmail.com">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="herosection">
-        <div class="container-fluid hero-section text-center">
-            <div class="row">
-                <!-- Left Image Column -->
-                <div class="col-md-4">
-                    <img src="images/left.png" alt="Left Image" height="200" width="200" class="img-fluid" />
-                </div>
-
-                <!-- Text Column -->
-                <div class="col-md-4 align-self-center herotext">
-                    <h1 id="typed-text"></h1>
-                    <p id="typed-subtext"></p>
-                </div>
-
-                <!-- Right Image Column -->
-                <div class="col-md-4">
-                    <img src="images/right.png" alt="Right Image" height="200" width="200" class="img-fluid " />
-                </div>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <img src="images/web developer.png" width="50" height="50" class="d-inline-block align-top"
+        alt="Shantan portfolio" />
+      <div class="brandname d-inline-block align-top">
+        <span>SHANTAN'S PORTFOLIO</span>
+      </div>
+    </a>
+    <div class="items">
+      <div class="home"><a href="index.html">Home</a></div>
+      <div class="about"><a href="#about">About</a></div>
+      <div class="contact">
+        <a href="mailto:shantanyeddula125@gmail.com">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <!-- Hero Section -->
+  <div class="herosection">
+    <div class="container hero-section text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/left.png" alt="Left Image" class="img-fluid" />
+        </div>
+        <div class="col-md-4 align-self-center herotext">
+          <h1 id="typed-text"></h1>
+          <p id="typed-subtext"></p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/right.png" alt="Right Image" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            typeText('Hello There!...', 'typed-text', function () {
-                typeText('My Name Is Yeddula Shantan', 'typed-text', function () {
-                typeSubText('I am a Computer Science student', 'typed-subtext', function () {
-                    typeSubText('I am a Programmer', 'typed-subtext', function () {
-                        typeSubText('I am a Frontend Developer', 'typed-subtext');
-                    });
-                });
-            });
-        });
+  <!-- About Section -->
+  <div class="container objcon" id="about">
+    <!-- Text content on the left side -->
+    <div class="abouttext">
+      <h3><b>Exploring Computer Science: My Journey So Far...</b></h3>
+      <p>
+        "As a Computer Science student, I'm on a mission to bring ideas to
+        life through web development and Python programming. With a passion
+        for crafting engaging websites and exploring the versatility of
+        Python, I'm driven by curiosity and creativity. I enjoy the challenge
+        of problem-solving and am eager to make meaningful contributions to
+        the tech world. Join me on this coding journey where simplicity meets
+        innovation, and every line of code tells a story of learning and
+        growth."
+      </p>
+    </div>
+    <!-- Image on the right side -->
+    <div class="aboutimage">
+      <div class="imgcon">
+        <img src="images/objimg.png" alt="" class="img-fluid" height="300" width="300" />
+      </div>
+    </div>
+  </div>
 
-        function typeText(text, elementId, callback) {
-            let i = 0;
-            const speed = 100;
+  <!-- Education Section -->
+  <div class="container education mt-5">
+    <h1 class="text-center mb-4">EDUCATION</h1>
+    <div class="row">
+      <!-- College Education -->
+      <div class="col-md-4">
+        <div class="eduinst eng d-flex flex-column align-items-center">
+          <h5>KSRM College Of Engineering, Kadapa, Andhra Pradesh, India.</h5>
+          <p><b>B.Tech</b></p>
+          <p>Computer Science and Engineering</p>
+          <small><b>2021-2024</b></small>
+        </div>
+      </div>
+      <!-- Diploma Education -->
+      <div class="col-md-4">
+        <div class="eduinst dip d-flex flex-column align-items-center">
+          <h5>Loyola Polytechnic, Pulivendula, Andhra Pradesh, India.</h5>
+          <p><b>DECE</b></p>
+          <p>Diploma in Electronics and Communication Engineering</p>
+          <small><b>2018-2021</b></small>
+        </div>
+      </div>
+      <!-- School Education -->
+      <div class="col-md-4">
+        <div class="eduinst scl d-flex flex-column align-items-center">
+          <h5>Deepti English Medium High School, Hindupur, Andhra Pradesh, India.</h5>
+          <p><b>SSC</b></p>
+          <p>Secondary School Certificate</p>
+          <small><b>2017-2018</b></small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            function type() {
-                if (i < text.length) {
-                    document.getElementById(elementId).innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                } else {
-                    if (callback) {
-                        callback();
-                    }
-                }
-            }
+  <!-- Skills Section -->
+  <h1 class="text-center mb-4 skillsheading">SKILLS</h1>
+  <div class="container skills mt-5">
+    <div class="row">
+      <!--TECHNICAL SKILLS-->
+      <div class="technicalskillsheading text-center">
+        <h3>Technical skills</h3>
+      </div>
+      <!-- C Programming Language -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/c.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>C</h5>
+        </div>
+      </div>
+      <!-- Python -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/python.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>PYTHON</h5>
+        </div>
+      </div>
+      <!-- MySQL -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/mysql.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>MYSQL</h5>
+        </div>
+      </div>
+      <!-- HTML -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/html-5.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>HTML</h5>
+        </div>
+      </div>
+      <!-- CSS -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/css.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>CSS</h5>
+        </div>
+      </div>
+      <!-- JAVASCRIPT -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/technical skills/js.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>JAVASCRIPT</h5>
+        </div>
+      </div>
+      <!--Personal Traits-->
+      <div class="personaltraitsheading text-center">
+        <h3>Personal Traits</h3>
+      </div>
+      <!-- Communication Skills -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/personal/communication.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>Communication</h5>
+        </div>
+      </div>
+      <!-- Problem Solving Skills -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/personal/problem-solving.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>Problem Solving</h5>
+        </div>
+      </div>
+      <!-- Adaptability -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/personal/adaptation.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>Adaptability</h5>
+        </div>
+      </div>
+      <!-- Empathy -->
+      <div class="col-md-4">
+        <div class="skill d-flex flex-column align-items-center shining-img">
+          <img src="images/personal/empathy.png" alt="" class="img-fluid" height="60" width="60" />
+          <h5>Empathy</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            setTimeout(type, 1000);
-        }
+  <!-- Certification Section -->
+  <div class="certihead">
+    <h1 class="text-center mb-5">CERTIFICATION</h1>
+  </div>
+  <div class="container certificationsec mt-5">
+    <div class="row">
+      <!-- Certification -->
+      <div class="col-md-5 certification text-center">
+        <h3 class="certhead">Advanced Data Science Certifications</h3>
+        <p>Certification on Emerging Technologies - Data Science(internship) by APSSDC in
+          collaboration with Indo Euro Synchronization (IES) Pvt Ltd.</p>
+      </div>
+      <div class="col-md-5 certification text-center">
+        <h3 class="certhead">SQL(Basics)</h3>
+        <p>Certification course on SQL-BASICS (Standard) by skillrack.</p>
+      </div>
+    </div>
+  </div>
 
-        function typeSubText(subText, elementId, callback) {
-            document.getElementById(elementId).innerHTML = ''; // Clear existing text
-            let i = 0;
-            const speed = 100;
+  <!-- Project Section -->
+  <div class="projecthead">
+    <h1 class="text-center mb-5 projectheading">PROJECTS</h1>
+  </div>
+  <div class="container projectsection">
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-3 project text-center">
+        <h3 class="proj">Tic-Tac-Toe Game</h3>
+        <p>Developed a Tic-Tac-Toe Game using HTML, CSS, and JavaScript.</p>
+        <small>Visit My GitHub Profile To See The Code</small>
+        <br>
+        <a href="https://shantan125.github.io/Tic-Tac-Toe-Game/">
+          <button class="play-btn"><b>Play</b></button>
+        </a>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-3 project text-center">
+        <h3 class="proj">Rock-Paper-Scissor</h3>
+        <p>Developed a Rock-Paper-Scissor Game using HTML, CSS, and JavaScript.</p>
+        <small>Visit My GitHub Profile To See The Code</small>
+        <br>
+        <a href="https://shantan125.github.io/Rock-paper-Scissor-Game/">
+          <button class="play-btn"><b>Play</b></button>
+        </a>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-3 project text-center">
+        <h3 class="proj">Portfolio WebSite</h3>
+        <p>Developed a Calculator using HTML, CSS, and JavaScript.</p>
+        <small>Visit My GitHub Profile To See The Code</small>
+        <br>
+        <a href="https://shantan125.github.io/Calculator/">
+          <button class="play-btn"><b>Visit</b></button>
+        </a>
+      </div>
+    </div>
+  </div>
 
-            function type() {
-                if (i < subText.length) {
-                    document.getElementById(elementId).innerHTML += subText.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                } else {
-                    if (callback) {
-                        callback();
-                    }
-                }
-            }
+  <!-- Footer Section -->
+  <div class="footer">
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html"><img src="images/web developer.png" alt="logo" height="30" width="30"></a><span
+            class="txt"> Shantan's Portfolio</span>
+        </div>
+        <div class="col-md-3">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shantan-yeddula-7b1b3b1b2/"><img src="images/social/LinkedIN.png"
+                alt="linkedin" height="30" width="30"><span class="txt">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="social-icons">
+            <a href="https://github.com/shantan125"><img src="images/social/Github.png" alt="github" height="30"
+                width="30"><span class="txt">GitHub</span></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="social-icons">
+            <a href="mailto:shantanyeddula125@gmail.com"><img src="images/social/Gmail.png" alt="gmail" height="30"
+                width="30"><span class="txt">Gmail</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-            setTimeout(type, 500); // Delay before starting typing
-        }
-    </script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
