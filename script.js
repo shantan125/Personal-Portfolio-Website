@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonContainer.appendChild(document.createTextNode("\u00A0\u00A0"));
 
     // Explore Button
-    const exploreButton = createButton("Explore", "#explore");
+    const exploreButton = createButton("Explore", "#about");
     buttonContainer.appendChild(exploreButton);
 
     document.getElementById("typed-text").appendChild(buttonContainer);
